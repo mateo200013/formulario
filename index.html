@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Mascotas</title>
+    <link rel="stylesheet" href="css\estilos.css">
+</head>
+<body>
+    <header>
+        <h1>FORMULARIO DE TU MASCOTA</h1>
+    </header>
+    <img src="img\a1.jpg" alt="Fondo" class="fondo">
+    <main>
+        <article>
+            <form action="">
+                <div class="container">
+
+                    <div class="form-group">
+                        <label for="nombre">Nombre de la mascota</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="especie">Especie</label>
+                        <select id="especie" name="especie">
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                            <option value="ave">Ave</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="raza">Raza</label>
+                        <select id="raza" name="raza">
+                            <option value="mestizo">Mestizo</option>
+                            <option value="labrador">Labrador</option>
+                            <option value="persa">Persa</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Género</label>
+                        <label><input type="radio" name="genero" value="macho"> Macho</label>
+                        <label><input type="radio" name="genero" value="hembra"> Hembra</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="edad">Edad</label>
+                        <input type="number" id="edad" name="edad" min="0">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="observaciones">Observaciones</label>
+                        <textarea id="observaciones" name="observaciones" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Registrar">
+                        <input type="reset" value="Limpiar">
+                    </div>
+
+                </div>
+            </form>
+        </article>
+    </main>
+</body>
+</html>
